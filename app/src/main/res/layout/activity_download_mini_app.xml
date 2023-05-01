@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mini App URL here or Scan QR"
+        android:inputType="textUri"/>
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/url_input"
+        android:text="Load MiniApp"/>
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/url_input"
+        android:layout_toRightOf="@id/load_button"
+        android:layout_marginTop="16dp"
+        android:text="Scan MiniApp"/>
+
+    <TextView
+        android:id="@+id/mini_app_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:text="Mini App Details:"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/load_button"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/fetch_miniapp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/mini_app_info_text"
+        android:text="List All Dowloaded MiniApps"/>
+    <Button
+        android:id="@+id/delete_miniapp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/fetch_miniapp"
+        android:text="Remove All Dowloaded MiniApps"/>
+</RelativeLayout>

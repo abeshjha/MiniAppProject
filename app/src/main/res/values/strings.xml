@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MiniAppTest</string>
+    <string name="prodBaseUrl">https://ica.edu.np/Dems/API/miniapp/</string>
+    <string name="stagingBaseUrl">https://ica.edu.np/Dems/API/miniapp/</string>
+    <string name="prodProjectId">abcd1234</string>
+    <string name="prodSubscriptionKey">abcd1234</string>
+    <string name="stagingProjectId">abcd1234</string>
+    <string name="stagingSubscriptionKey">abcd1234</string>
+    <string name="json_data">
+
+   [{\"id\":\"1\",\"name\":\"Fake_data1\",\"phoneNumber\":\"1234567\"},{\"id\":\"2\",\"name\":\"Fake_data2\",\"phoneNumber\":\"9831313\"}]
+
+
+</string>
+</resources>
